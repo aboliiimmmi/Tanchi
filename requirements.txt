@@ -1,0 +1,6 @@
+Pyrogram
+tgcrypto
+jdatetime
+schedule
+pytz
+psutil
