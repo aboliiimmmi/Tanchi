@@ -1779,25 +1779,6 @@ for BOT in BOTS_LIST:
     BOT: Client
     get_updates(BOT)
 
-
-# Keep Alive Webserver for UptimeRobot
-import threading
-from flask import Flask
-
-app_web = Flask(__name__)
-
-@app_web.route('/')
-def home():
-    return "Tabchi is running..."
-
-def run():
-    app_web.run(host='0.0.0.0', port=8080)
-
-t = threading.Thread(target=run)
-t.start()
-
-
-# حالا اجرای ربات بیاد این پایین
 if __name__ == "__main__":
     try:
         schedule_stater()
