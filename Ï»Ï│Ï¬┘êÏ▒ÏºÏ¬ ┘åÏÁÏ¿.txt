@@ -1,0 +1,5 @@
+///// @Sourrce_Kade//
+pip install -r requirements.txt
+
+python TabChi3.py
+
